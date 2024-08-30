@@ -16,10 +16,13 @@
 class Snake {
 private:
     sf::VideoMode vMode;
+    bool moveRight;
+    bool moveLeft;
+    bool moveUp;
+    bool moveDown;
     std::shared_ptr<sf::RenderWindow> window;
     std::vector<sf::CircleShape> snake;
     sf::Event event;
-    sf::CircleShape snakeBod;
     sf::Vector2f direction{50.f,0.f};
     sf::RectangleShape food;
 public:
@@ -45,6 +48,12 @@ public:
     void initSnake();
 
     void moveSnakeVec();
+
+    void initBool();
+
+    void updateMovement();
+
+    void feedLogic();
 };
 
 
