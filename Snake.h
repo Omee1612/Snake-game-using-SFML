@@ -20,16 +20,31 @@ private:
     std::vector<sf::CircleShape> snake;
     sf::Event event;
     sf::CircleShape snakeBod;
+    sf::Vector2f direction{50.f,0.f};
     sf::RectangleShape food;
 public:
     Snake();
-    virtual ~Snake ()=default;
+
+    virtual ~Snake() = default;
+
     void initWindow();
+
     void initFood();
+
     void update();
+
+    void renderSnake();
+
     void render();
+
     bool windowStat();
+
     void pollEvents();
+
+
+    void initSnake();
+
+    void moveSnakeVec();
 };
 
 
