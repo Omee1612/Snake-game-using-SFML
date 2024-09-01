@@ -1,0 +1,14 @@
+# Target labels
+ sfml-populate
+# Source files and their labels
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/CMakeFiles/sfml-populate
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/CMakeFiles/sfml-populate.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test.rule
+G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update.rule

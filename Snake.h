@@ -19,18 +19,30 @@ private:
     bool moveRight;
     bool moveLeft;
     bool moveUp;
+    int i;
     bool moveDown;
     std::shared_ptr<sf::RenderWindow> window;
+    sf::Clock clock;
     std::vector<sf::CircleShape> snake;
+    bool Lost;
+    sf::Font font1;
+    sf::Font font2;
+    sf::Font font3;
     sf::Event event;
     sf::Vector2f direction{0.04f,0.f};
-    sf::RectangleShape food;
+    std::shared_ptr<sf::RectangleShape> food;
 public:
     Snake();
 
     virtual ~Snake() = default;
 
     void initWindow();
+
+    void loseLogic();
+
+    void addSegment();
+
+    void compileText();
 
     void initFood();
 
@@ -43,7 +55,6 @@ public:
     bool windowStat();
 
     void pollEvents();
-
 
     void initSnake();
 

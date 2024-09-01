@@ -1,0 +1,21 @@
+# ninja log v5
+1	64	7469112063847222	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	7627bb49d60e4fd4
+1	64	7469112063847222	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	7627bb49d60e4fd4
+65	285899	7469114922189591	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	c02039d20e89c829
+65	285899	7469114922189591	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	c02039d20e89c829
+285899	286035	0	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	b8dc63d5f10d2903
+285899	286035	0	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	b8dc63d5f10d2903
+286038	286083	7469114924038684	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	ac393964f51aac8b
+286038	286083	7469114924038684	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	ac393964f51aac8b
+286083	286128	7469114924494214	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	904ac60b71324e7f
+286083	286128	7469114924494214	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	904ac60b71324e7f
+286128	286173	7469114924939200	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a9cf55227e53d3d1
+286128	286173	7469114924939200	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a9cf55227e53d3d1
+286173	286220	7469114925416387	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	cf11dcfd2df466cf
+286173	286220	7469114925416387	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	cf11dcfd2df466cf
+286220	286265	7469114925864451	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	171e9429430ef19f
+286220	286265	7469114925864451	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	171e9429430ef19f
+286265	286326	7469114926462559	CMakeFiles/sfml-populate-complete	4bf32499968320b4
+286265	286326	7469114926462559	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	4bf32499968320b4
+286265	286326	7469114926462559	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	4bf32499968320b4
+286265	286326	7469114926462559	G:/snakegame/cmake-build-release/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	4bf32499968320b4
