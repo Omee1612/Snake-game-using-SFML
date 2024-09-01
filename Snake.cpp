@@ -5,25 +5,26 @@ void Snake::initWindow() {
     vMode.width = 1920;
     window = std::make_shared<sf::RenderWindow>(vMode, "Snake",
                                                 sf::Style::Titlebar);
+    window->setFramerateLimit(75);
 }
 
 void Snake::updateMovement() {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !moveLeft) {
         moveRight = true;
         moveLeft = false;
         moveUp = false;
         moveDown = false;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !moveDown) {
         moveRight = false;
         moveLeft = false;
         moveUp = true;
         moveDown = false;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !moveRight) {
         moveRight = false;
         moveLeft = true;
         moveUp = false;
         moveDown = false;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !moveUp) {
         moveRight = false;
         moveLeft = false;
         moveUp = false;
@@ -55,20 +56,27 @@ void Snake::renderSnake() {
 }
 
 void Snake::moveSnakeVec() {
-    for (auto &s: snake) {
-        if (moveRight) {
-            s.move(0.04, 0.f);
-        }
-        else if (moveLeft) {
-            s.move(-0.04, 0.f);
-        }
-        else if (moveUp) {
-            s.move(0.f, -0.04);
-        }
-        else if (moveDown) {
-            s.move(0.f, 0.04);
-        }
+    for( int i = snake.size() - 1; i >0; i--) {
+        snake[i].setPosition(snake[i-1].getPosition());
     }
+    sf::Vector2f headPos = snake[0].getPosition();
+    if(moveRight)
+    {
+        headPos.x += 5.f;
+    }
+    else if (moveLeft)
+    {
+        headPos.x -= 5.f;
+    }
+    else if (moveUp)
+    {
+        headPos.y -= 5.f;
+    }
+    else if (moveDown)
+    {
+        headPos.y += 5.f;
+    }
+    snake[0].setPosition(headPos);
 }
 
 Snake::Snake() {
@@ -88,8 +96,8 @@ void Snake::initFood() {
 
 void Snake::update() {
     pollEvents();
-    moveSnakeVec();
     updateMovement();
+    moveSnakeVec();
 }
 
 void Snake::pollEvents() {

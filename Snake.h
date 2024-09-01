@@ -23,7 +23,7 @@ private:
     std::shared_ptr<sf::RenderWindow> window;
     std::vector<sf::CircleShape> snake;
     sf::Event event;
-    sf::Vector2f direction{50.f,0.f};
+    sf::Vector2f direction{0.04f,0.f};
     sf::RectangleShape food;
 public:
     Snake();
