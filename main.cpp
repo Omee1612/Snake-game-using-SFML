@@ -11,4 +11,5 @@ int main() {
 
         sn.render();
     }
+    return 0;
 }
