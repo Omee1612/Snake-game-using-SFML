@@ -8,5 +8,8 @@ FETCHCONTENT_DECLARE(SFML GIT_REPOSITORY https://github.com/SFML/SFML.git GIT_TA
 FETCHCONTENT_MAKEAVAILABLE(SFML)
 add_executable(snakegame main.cpp
         Snake.h
-        Snake.cpp)
+        Snake.cpp
+        MainMenu.h
+        MainMenu.h
+        MainMenu.cpp)
 target_link_libraries(snakegame sfml-graphics sfml-window)

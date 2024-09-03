@@ -9,7 +9,8 @@
 #include <deque>
 #include <ctime>
 #include <SFML/Graphics.hpp>
-
+#include "MainMenu.h"
+class MainMenu;
 class Snake {
 private:
     sf::VideoMode vMode;
@@ -28,13 +29,13 @@ private:
     sf::Font font2;
     sf::Font font3;
     sf::Event event;
+    MainMenu *menu;
 public:
     Snake();
-    virtual ~Snake() = default;
+    virtual ~Snake();
 
     void initWindow();
     void initSnake();
-    void initFood();
     void compileText();
 
     void update();
@@ -50,7 +51,6 @@ private:
     void feedLogic();
     void pollEvents();
     void renderSnake();
-    void loseLogic();
 };
 
 #endif //SNAKEGAME_SNAKE_H

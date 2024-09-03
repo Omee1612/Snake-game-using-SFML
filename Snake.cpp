@@ -1,10 +1,10 @@
 #include "Snake.h"
-
+#include "MainMenu.h"
 void Snake::initWindow() {
     vMode.height = 1080;
     vMode.width = 1920;
     window = std::make_shared<sf::RenderWindow>(vMode, "Snake", sf::Style::Titlebar);
-    window->setFramerateLimit(10);  // Reduce frame rate for better control
+    window->setFramerateLimit(30);  // Reduce frame rate for better control
 }
 
 void Snake::updateMovement() {
@@ -98,6 +98,11 @@ void Snake::renderSnake() {
 }
 
 void Snake::render() {
+    if(menu->isActive())
+    {
+        menu->render();
+        return;
+    }
     window->clear();
     if (Lost) {
         sf::Text text;
@@ -113,6 +118,11 @@ void Snake::render() {
 }
 
 void Snake::update() {
+    if (menu->isActive())
+    {
+        menu->update();
+        return;
+    }
     pollEvents();
     updateMovement();
     moveSnake();
@@ -147,9 +157,14 @@ bool Snake::windowStat() {
     return window->isOpen();
 }
 
-Snake::Snake() {
+Snake::Snake() : menu(nullptr) {
     initWindow();
     initSnake();
     createFood();
     compileText();
+    menu = new MainMenu(window);
+}
+
+Snake::~Snake() {
+    delete menu;
 }
